@@ -1,0 +1,79 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+
+:root {
+    --title-font: 'Quicksand', sans-serif;
+    --body-font: 'Rubik', sans-serif;
+    --gray-100: #d5d8dc;
+    --gray-400: #5d6d7e;
+    --gray-500: #2c3e50;
+    --cyan-500: #31ffda;
+    --cyan-700: #16d3b1;
+}
+ 
+body {
+    font-family: var(--body-font);
+    font-size: 16px;
+    color: var(--gray-400);
+}
+
+.container {
+    max-width: 900px;
+    padding: 25px 25px;
+}
+.hero {
+    min-height: 300px;
+    display: flex;
+    flex-direction: row;
+    border-color: var(--gray-100);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 16px;
+}
+.img-wrapper {
+    width: 50%;
+    position: relative;
+}
+.img-hero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px 0 0 16px;
+    position: absolute;
+    object-position: top;
+}
+.content-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+
+}
+.h1-hero {
+    font-family: var(--title-font);
+    font-size: 24px;
+    color: black;
+    margin: 24px;
+
+}
+.p-hero {
+    margin: 0 24px 24px;
+
+}
+.button {
+    font-family: var(--title-font);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 16px 24px;
+    margin: 0 24px 24px;
+    justify-content: flex-end;
+    background-color: var(--cyan-500);
+    color: var(--gray-500);
+    border-color: var(--cyan-700);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+
+}
