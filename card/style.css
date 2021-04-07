@@ -9,6 +9,7 @@
     --green-500: #2ecc71;
     --green-700: #239b56;
     --green-800: #1d8348;
+    --gray-50: #F2F4F4;
     --gray-100: #d6dbdf;
     --gray-800: #616a6a;
 }
@@ -17,13 +18,13 @@
 }
 body {
     margin: 0;
+    background-color: var(--gray-50);
 }
 
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 1.5rem;
-    background-color: #F2F4F4;
     padding: 1rem;
 }
 
@@ -35,6 +36,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
 }
 .img-card {
     width: 100%;
